@@ -6,9 +6,16 @@
 	"extends": ["airbnb-base", "prettier"],
 	"plugins": ["prettier"],
 	"rules": {
-		"linebreak-style": ["error", "windows"],
+		"linebreak-style": ["off", "windows"],
 		"quotes": ["error", "single"],
 		"semi": ["error", "always"],
-		"no-console": "off"
+		"no-console": "off",
+		"consistent-return": "off",
+		"eqeqeq": "off",
+		"comma-dangle": 0,
+		"no-underscore-dangle": 0,
+		"no-param-reassign": 0,
+		"no-return-assign": 0,
+		"camelcase": 1
 	}
 }
