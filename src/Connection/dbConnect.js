@@ -13,7 +13,10 @@ const disconnected = red;
 // export this function and imported by server.js
 
 const Connect = () => {
-	mongoose.connect(process.env.DB_URI, { useNewUrlParser: true });
+	mongoose.connect(process.env.DB_URI, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	});
 	mongoose.set('useFindAndModify', false);
 	mongoose.set('useCreateIndex', true);
 
